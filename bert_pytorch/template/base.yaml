@@ -1,0 +1,25 @@
+start: 0
+batch_size: 256
+epoch: 250
+mask_only: True
+
+vocab_size: 8000
+dim: 512
+embedding_hidden_dim: -1
+dim_ff: 2048
+max_len: 768
+num_layers: 6
+num_heads: 8
+num_token_type: 2
+dropout: 0.2
+eps: 1e-12
+
+reuse_transformer: False
+
+device: cuda
+
+head_use_ln: True
+
+pad_symbol: 0
+pe_type: learnable
+te_type: full
